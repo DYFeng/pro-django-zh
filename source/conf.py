@@ -206,8 +206,10 @@ latex_elements = {
 \usepackage{fontspec}
 
 
-\setmainfont{FZLTXHK--GBK1-0}
-\setCJKmainfont{FZLTXHK--GBK1-0}
+%\setmainfont{FZLTXHK--GBK1-0}
+%\setCJKmainfont{FZLTXHK--GBK1-0}
+\setmainfont{Microsoft YaHei}
+\setCJKmainfont{Microsoft YaHei}
 
 
 \setboolean{@twoside}{false}
