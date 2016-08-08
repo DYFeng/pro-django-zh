@@ -9,13 +9,13 @@ Pro Django 中文译本
 Contents:
 
 .. toctree::
-:maxdepth: 5
+    :maxdepth: 5
 
-      understanding_django
-      django_is_python
-      models
-      urls_and_views
-      templates
+    understanding_django
+    django_is_python
+    models
+    urls_and_views
+    templates
 
 
 
