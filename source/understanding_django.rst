@@ -129,7 +129,7 @@ Django视图，把传统视图的一些功能，和整个控制器的功能融�
 
 由于视图可以像一个简单的函数似的被调用，没有用到什么特殊的结构，所以视图可以有很多种方式来实现。
 不仅仅可以是一个简单的函数，一个视图可以表现为任意Python回调，包括类，类实例方法(instance method)，可调用对象(callable object)，
-加里化(curry)函数，装饰过的函数(什么是curry，看http://www.vaikan.com/currying-partial-application/和https://mtomassoli.wordpress.com/2012/03/18/currying-in-python/)
+加里化(curry)函数，装饰过的函数。
 
 模版
 ^^^^
