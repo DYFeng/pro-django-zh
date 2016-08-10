@@ -6,18 +6,16 @@
 Pro Django 中文译本
 ======================================
 
-Contents:
-
 .. toctree::
-    :maxdepth: 5
+    :caption: 章节
+    :maxdepth: 2
+    :numbered:
 
     understanding_django
     django_is_python
     models
     urls_and_views
     templates
-
-
 
 Indices and tables
 ==================
