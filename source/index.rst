@@ -15,7 +15,14 @@ Pro Django 中文译本
     django_is_python
     models
     urls_and_views
+    forms
     templates
+    handling_http
+    backend_protocols
+    common_tools
+    coordinating_applications
+    enhancing_applications
+
 
 Indices and tables
 ==================
