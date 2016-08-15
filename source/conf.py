@@ -258,7 +258,7 @@ latex_elements = {
 \usepackage{indentfirst}
 \setlength{\parindent}{2em}
 \usepackage{fontspec}
-
+\usepackage{titletoc}
 
 %\setmainfont{FZLTXHK--GBK1-0}
 %\setCJKmainfont{FZLTXHK--GBK1-0}
@@ -269,6 +269,7 @@ latex_elements = {
 \setboolean{@twoside}{false}
 \XeTeXlinebreaklocale "zh"
 \XeTeXlinebreakskip = 0pt plus 1pt
+
 
     ''',
 }
