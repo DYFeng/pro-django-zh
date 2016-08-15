@@ -7,7 +7,6 @@ Pro Django 中文译本
 ======================================
 
 .. toctree::
-    :caption: 章节
     :maxdepth: 2
     :numbered:
 
