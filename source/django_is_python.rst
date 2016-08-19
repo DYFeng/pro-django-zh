@@ -115,7 +115,7 @@ Python允许你给类定义一个不同的元类，来自定义这个创建过�
 ...         for (name, value) in attrs.items():
 ...             print('    %s: %r' % (name, value))
 ...
->>> class RealClass(object,metaclass=MetaClass):
+>>> class RealClass(object, metaclass=MetaClass):
 ...     spam = 'eggs'
 ...
 Defining <class '__main__.RealClass'>
