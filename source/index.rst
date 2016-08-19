@@ -6,10 +6,11 @@
 Pro Django 中文译本
 ======================================
 
+Contents:
+
 .. toctree::
     :maxdepth: 2
     :numbered:
-    :titlesonly:
 
     understanding_django
     django_is_python
