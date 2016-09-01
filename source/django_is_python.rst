@@ -642,9 +642,10 @@ __getitem__(self)和 __setitem(self,value)
 访问的语法与字典完全一致，所以Python复用之前字典的两个方法。
 这能让序列自定义它每个值会被怎么访问，或者限制序列设置新的值，做到只读的效果。
 
-百变函数（Augmenting Function）
+函数增强（Augmenting Function）
 ============================
 
+（译者注：Augmenting Function应该有更加优美的译法，augmented matrix就是增广矩阵）
 除了标准声明和调用外，Python还提供了多种方式，让你使用有趣的方法来调用函数。
 Django使用这些技术点来高效重用代码。
 你也可以在你的应用里使用相同的技术，皆因它们是标准Python的一部分。
