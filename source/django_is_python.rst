@@ -931,16 +931,43 @@ Traceback (most recent call last):
   ...
 TypeError: decorator() takes exactly 1 argument (2 given)
 
-第二个例子失败的原因是，我们一开始没有调用 *decorate* 函数（译者注：他把 *decorate* 当装饰器了，应该是调用*decorate* 函数生成装饰器）。
+第二个例子失败的原因是，我们一开始没有调用 *decorate* 函数。
 因此，所有调用test的子请求，把发送他们的参数传递了给 *decorator* 而不是 *test*。
 这是一个错误的使用，因此Python抛出一个错误。
 这种场景比较难调试，因为准确的异常抛出，依赖于被包装的函数。
 
-一个装饰器，有或者没有参数
-----------------------
+兼容带/不带参数的装饰器
+--------------------
+另外一种使用装饰器的方法是，提供单一的一个装饰器，兼容之前的两种场景：带参数和不带参数。
+这会有点复杂但仍然值得我们探究。
 
-
-
+>>> def decorate(func=None, prefix='Decorated'):
+...     def decorated(func):
+...         # This returns the final, decorated
+...         # function, regardless of how it was called
+...         def wrapper(*args, **kwargs):
+...             return '%s: %s' % (prefix, func(*args, **kwargs))
+...         return wrapper
+...     if func is None:
+...         # The decorator was called with arguments
+...         def decorator(func):
+...             return decorated(func)
+...         return decorator
+...     # The decorator was called without arguments
+...     return decorated(func)
+...
+>>> @decorate
+... def test(a, b):
+...     return a + b
+...
+>>> test(13, 17)
+'Decorated: 30'
+>>> @decorate(prefix='Arguments')
+... def test(a, b):
+...     return a + b
+...
+>>> test(13, 17)
+'Arguments: 30'
 
 描述符
 ======
